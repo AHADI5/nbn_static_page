@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width:768px) {
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body  {
+    font-family: 'Poppins', 'sans-serif';
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar  {
+    display: flex;
+    align-self: center;
+    height: 70px;
+    padding: 20px 36px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    margin-bottom: 20px;
   }
+
+  .navbar img  {
+    width: 100px;
+  }
+  .hero img  {
+    align-self: center;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  .hero h1{
+
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  /* .hero--text , h1 {
+    padding-left: 50px;
+  } */
+  .hero--text {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  .cards {
+    display: grid;
+    padding: 30px 50px;
+    grid-template-columns: 40% 40% 40%;
+  }
+
+  .card {
+    width: 100%;
+    /* background-color: red; */
+    padding: 12px;
+  }
+
+  .illustrations-part img {
+    width: 100%;
+    height : 400px
+  }
+
+  .informations {
+    font-size: x-large;
+    padding: 14px;
+  }
+  
+
 }
