@@ -48,26 +48,46 @@
 
   .cards {
 
-    display: grid;
+    display: flex;
     padding: 30px 50px;
-    grid-template-columns: 40% 40% 40%;
+    overflow: scroll;
+    text-overflow: ellipsis;
+   
+    
   }
 
   .card {
-    width: 100%;
+    width: 500px;
     /* background-color: red; */
     padding: 12px;
- 
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+
   }
 
   .illustrations-part img {
     width: 100%;
-    height : 400px
+    height : 400px;
+    
   }
 
   .informations {
     font-size: x-large;
     padding: 14px;
+  }
+
+  .illustrations-part {
+    position: relative;
+  }
+  .openSpots {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+
   }
   
 

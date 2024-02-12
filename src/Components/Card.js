@@ -1,13 +1,14 @@
 import React from "react";
 
-export default function Card({image , starRate , country , about , price , rateNumber} ) {
+export default function Card({image , starRate , country , about , price , rateNumber , openSpot} ) {
     return (
      
             <div className="card">
                 <div className="illustrations-part">
                     <img src={`../images/${image}`} alt="IMG" />
+                    {openSpot === 0 && <div className="openSpots">SOLD OUT</div>}
                     
-                    </div>
+                </div>
                 <div className="informations">
                     <div className="star-rate">
                         <img src="/images/Star.png" alt="Star" /> 
