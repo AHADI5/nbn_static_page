@@ -47,6 +47,7 @@
   }
 
   .cards {
+
     display: grid;
     padding: 30px 50px;
     grid-template-columns: 40% 40% 40%;
@@ -56,6 +57,7 @@
     width: 100%;
     /* background-color: red; */
     padding: 12px;
+ 
   }
 
   .illustrations-part img {
