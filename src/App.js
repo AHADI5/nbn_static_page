@@ -8,13 +8,15 @@ export default function App() {
   const cardData  = Data.map((data) => {
     return <Card
     key={data.key}
-    image = {data.image}
-    starRate = {data.starRate}
-    rateNumber = {data.rateNumber}
-    country={data.country}
-    about={data.about}
-    price={data.price}
-    openSpot = {data.openSpot}
+    {...data}
+    // image = {data.image}
+    // starRate = {data.starRate}
+    // rateNumber = {data.rateNumber}
+    // country={data.country}
+    // about={data.about}
+    // price={data.price}
+    // openSpot = {data.openSpot}
+    // location  = {data.location}
 
     />
 
